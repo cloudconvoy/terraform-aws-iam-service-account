@@ -3,12 +3,6 @@ variable "cluster" {
   type        = string
 }
 
-variable "inline_policies" {
-  default     = {}
-  description = "A list of named policies to inline into this role"
-  type        = map(string)
-}
-
 variable "name" {
   description = "The name of the service account"
   type        = string
